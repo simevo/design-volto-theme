@@ -126,7 +126,7 @@ const NewsItemView = ({ content }) => {
                 <div className="card-wrapper card-teaser-wrapper card-teaser-wrapper-equal">
                   {content.relatedItems.map((item, i) => (
                     <GenericCard
-                      index={item['@id']}
+                      key={item['@id']}
                       item={item}
                       showimage={false}
                       content={content}
